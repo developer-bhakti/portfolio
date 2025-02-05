@@ -13,7 +13,7 @@ const activePage = () => {
     header.classList.add("active");
   
     console.log("class add active");
-  }, 1100);
+  }, 100);
 
   navLinks.forEach((link) => {
     link.classList.remove("active");
@@ -22,7 +22,7 @@ const activePage = () => {
   barsBox.classList.remove("active");
   setTimeout(() => {
     barsBox.classList.add("active");
-  }, 1100);
+  }, 100);
 
   sections.forEach((section) => {
     section.classList.remove("active");
@@ -38,7 +38,7 @@ navLinks.forEach((link, idx) => {
 
       setTimeout(() => {
         sections[idx].classList.add("active");
-      }, 1100);
+      }, 100);
     }
   });
 });
@@ -51,7 +51,7 @@ logoLink.addEventListener("click", () => {
 
     setTimeout(() => {
       sections[idx].classList.add("active");
-    }, 1100);
+    }, 100);
   }
 });
 
@@ -117,5 +117,3 @@ arrowLeft.addEventListener("click", () => {
   }
   activePortfolio();
 });
-
-activePage();
