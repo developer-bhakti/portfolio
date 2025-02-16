@@ -20,6 +20,8 @@
 
 html{
     font-size: 62.5%;
+    scroll-behavior: smooth;
+
 }
 
 body {
@@ -74,6 +76,8 @@ nav a.active {
     color: var(--main-color);
 }
 
+
+
 #menu-icon {
     font-size: 4rem;
     display: none;
@@ -118,7 +122,7 @@ nav a.active {
         transform: translateY(0);
     }
 }
-
+/* 
 section {
     position: absolute;
     width: 100%;
@@ -133,6 +137,17 @@ section {
 section.active {
    animation: show-content 0.5s linear forwards;
    animation-delay: 0.5s;
+} */
+
+section {
+    position: relative;            /* Use relative positioning so sections stack naturally */
+    width: 100%;
+    min-height: 100vh;             /* Ensures each section is at least viewport height */
+    padding: 10rem 9% 2rem;
+    background: var(--bg-color);
+    visibility: visible;           /* Always visible */
+    opacity: 1;                    /* Fully opaque */
+    overflow: visible;             /* Allow natural overflow */
 }
 
 @keyframes show-content {
@@ -153,6 +168,7 @@ section.active {
 
 .home-details h1 {
     font-size: clamp(3.5rem, 10vw, 5.5rem);
+    padding-top: 1rem;
 }
 
 .home-details h2 {
@@ -168,6 +184,7 @@ section.active {
     -webkit-text-stroke: 0.1rem var(--main-color);
     animation: display-text 16s linear infinite;
     animation-delay: calc(-4s * var(--i));
+    padding-top: 2rem;
 }
 
 @keyframes display-text {
@@ -230,15 +247,18 @@ section.active {
 }
 
 .home-details .btn-sci .sci a {
+    height: 5rem;
+    width: 5rem;
     display: inline-block;
-    padding: .8rem;
+    padding: 1.2rem;
     border: .2rem solid var(--main-color);
-    border-radius: 50%;
+    border-radius: 100%;
     font-size: 2rem;
     color: var(--main-color);
     margin: 0 .8rem;
     transition: .5s;
 }
+
 
 .home-details .btn-sci .sci a:hover {
     background: var(--main-color);

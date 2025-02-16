@@ -9,35 +9,35 @@ menuIcon.addEventListener('click', () => {
   navbar.classList.toggle('active');
 });
 
-const activePage = () => {
-  const header = document.querySelector("header");
-  const barsBox = document.querySelector(".bars-box");
+// const activePage = () => {
+//   const header = document.querySelector("header");
+//   const barsBox = document.querySelector(".bars-box");
 
-  header.classList.remove("active");
-  console.log("after remove ");
+//   header.classList.remove("active");
+//   console.log("after remove ");
 
-  setTimeout(() => {
-    header.classList.add("active");
+//   setTimeout(() => {
+//     header.classList.add("active");
   
-    console.log("class add active");
-  }, 100);
+//     console.log("class add active");
+//   }, 100);
 
-  navLinks.forEach((link) => {
-    link.classList.remove("active");
-  });
+//   navLinks.forEach((link) => {
+//     link.classList.remove("active");
+//   });
 
-  barsBox.classList.remove("active");
-  setTimeout(() => {
-    barsBox.classList.add("active");
-  }, 100);
+//   barsBox.classList.remove("active");
+//   setTimeout(() => {
+//     barsBox.classList.add("active");
+//   }, 100);
 
-  sections.forEach((section) => {
-    section.classList.remove("active");
-  });
+//   sections.forEach((section) => {
+//     section.classList.remove("active");
+//   });
 
-  menuIcon.classList.remove('bx-x');
-  navbar.classList.remove('active');
-}
+//   menuIcon.classList.remove('bx-x');
+//   navbar.classList.remove('active');
+// }
 
 navLinks.forEach((link, idx) => {
   link.addEventListener("click", () => {
@@ -126,4 +126,32 @@ arrowLeft.addEventListener("click", () => {
     arrowLeft.classList.add("disabled");
   }
   activePortfolio();
+});
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const sections = document.querySelectorAll("section");
+  const navLinks = document.querySelectorAll("nav a");
+
+  function updateActiveLink() {
+      let scrollPosition = window.scrollY + 100; // Add offset
+
+      sections.forEach((section) => {
+          if (
+              scrollPosition >= section.offsetTop &&
+              scrollPosition < section.offsetTop + section.offsetHeight
+          ) {
+              let currentId = section.getAttribute("id");
+              navLinks.forEach((link) => {
+                  link.classList.remove("active");
+                  if (link.getAttribute("href") === `#${currentId}`) {
+                      link.classList.add("active");
+                  }
+              });
+          }
+      });
+  }
+
+  window.addEventListener("scroll", updateActiveLink);
+  updateActiveLink(); // Call on page load
 });
