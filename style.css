@@ -162,19 +162,20 @@ section {
     display: flex;
     align-items: center;
     gap: 5rem;
-    /* justify-content: space-between; */
+    justify-content: space-between;
 }
 
 
 .home-details h1 {
     font-size: clamp(3.5rem, 10vw, 5.5rem);
     padding-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 .home-details h2 {
     display: inline-block;
     font-size: 3.2rem;
-    margin-top: -1rem;
+    margin-bottom: 4rem;
 }
 
 .home-details h2 span {
