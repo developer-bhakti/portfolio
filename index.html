@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--header-->
+    <header class="active">
+        <a href="#" class="logo">Bhakti.</a>
+
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <nav>
+            <a href="#home" class="active">Home</a>
+            <a href="#services">Skills</a>
+            <a href="#resume">Resume</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!--bars background-->
+    <div class="bars-box active">
+        <div class="bar" style="--i:6"></div>
+        <div class="bar" style="--i:5"></div>
+        <div class="bar" style="--i:4"></div>
+        <div class="bar" style="--i:3"></div>
+        <div class="bar" style="--i:2"></div>
+        <div class="bar" style="--i:1"></div>
+    </div>
+
+    <!--home section-->
+    <section id="home" class="home ">
+        <div class="home-details">
+            <h1>Bhakti Purnale</h1>
+            <h2>I'm A  Frontend Developer</h2>
+                <!-- <span style="--i:4;" data-text="developer">Frontend developer</span>
+                <span style="--i:3;" data-text="web">Web Developer</span> -->
+            <!-- <p></p> -->
+            <div class="btn-sci">
+                <a href="./images/Bhakti_Purnale_Resume.pdf" class="btn">Download CV</a>
+                <div class="sci">
+                    <a href="https://github.com/developer-bhakti"><i class='bx bxl-github'></i></a>
+                    <a href="https://www.linkedin.com/in/bhakti-purnale-98723b280?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class='bx bxl-linkedin' ></i></a>
+                    <!-- <a href="#"><i class='bx bxl-discord'></i></a> -->
+                </div>
+            </div>  
+        </div>
+        <div class="home-img">
+            <div class="img-box">
+                <div class="img-item">
+                    <img src="./images/bhakti.png" alt="Home Image">
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <!-- skills section -->
+    <section id="services" class="services ">
+        <h2 class="heading">My <span>Skills</span></h2>
+    
+        <div class="services-container">
+            
+            <div class="services-box"> 
+                <div class="icon">
+                    <i class='bx bx-code-alt'></i>
+                    <a href="#"><i class='bx bx-arrow-back'></i></a>
+                </div>
+                <h3>Html</h3>
+                <p>.....</p>
+            </div>
+    
+            <div class="services-box">
+                <div class="icon">
+                    <i class='bx bxs-paint'></i>
+                    <a href="#"><i class='bx bx-arrow-back'></i></a>
+                </div>
+                <h3>Css</h3>
+                <p>.......</p>
+            </div>
+    
+            <div class="services-box">
+                <div class="icon">
+                    <i class='bx bx-palette'></i>
+                    <a href="#"><i class='bx bx-arrow-back'></i></a>
+                </div>
+                <h3>Javascript</h3>
+                <p>.......</p>
+            </div>
+    
+            <div class="services-box">
+                <div class="icon">
+                    <i class='bx bx-trending-up'></i>
+                    <a href="#"><i class='bx bx-arrow-back'></i></a>
+                </div>
+                <h3>React</h3>
+                <p>.......</p>
+            </div>
+    
+            <div class="services-box">
+                <div class="icon">
+                    <i class='bx bx-slideshow'></i> 
+                    <a href="#"><i class='bx bx-arrow-back'></i></a>
+                </div>
+                <h3>Tailwind Css</h3>
+                <p>.......</p>
+            </div>
+    
+            <div class="services-box">
+                <div class="icon">
+                    <a href="#"><i class='bx bxl-github'></i></a>
+                    <a href="#"><i class='bx bx-arrow-back'></i></a>
+                </div>
+                <h3>GitHub</h3> 
+                <p>.......</p>
+            </div>
+    
+        </div>
+    </section>
+    
+
+    <!--resume section-->
+    <section id="resume" class="resume ">
+        <div class="resume-container">
+            <div class="resume-box">
+                <h2>Why Hire Me?</h2>
+                <p class="desc">You should hire me because I recently completed my BCA ,
+                     which shows my strong understanding of technology. I'm eager to learn and grow in a professional environment,
+                     and I'm passionate about applying my skills to real-world challenges. 
+                     I am motivated, hardworking, and ready to contribute to your team and adapt to your company's needs</p>
+                <div class="resume-buttons">
+                    <button class="resume-btn" data-target="Experience">Experience</button>
+                    <button class="resume-btn" data-target="Education">Education</button>
+                    <button class="resume-btn" data-target="Skills">Skills</button>
+                    <button class="resume-btn" data-target="About">About Me</button>
+                </div>
+            </div>
+    
+            <div class="resume-box">
+                <div class="resume-detail Experience active">
+                    <h2 class="heading">My <span>Experience</span></h2>
+                    <p class="desc">I'm a Fresher </p>
+                    <div class="resume-list">
+                        <div class="resume-item">
+                            <p class="year"></p>
+                            <h3>Fresher</h3>
+                            <p class="company"></p>
+                            <p>As a recent graduate, I am excited to embark on my professional journey as a fresher.
+                               Having completed my BCA in 2024, I’ve gained a strong foundation in computer applications and technology.
+                               I'm eager to apply my skills, learn from industry professionals, and contribute to the growth of any organization I join.
+                               My enthusiasm and fresh perspective make me ready to take on new challenges in the tech field.</p>
+                        </div> 
+                    </div>
+                </div>
+
+    
+                <div class="resume-detail Education">
+                    <h2 class="heading">My <span>Education</span></h2>
+                    <p class="desc">my education</p>
+                    <div class="resume-list">
+                        <div class="resume-item">
+                            <p class="year">2024</p>
+                            <h3>Frontend</h3>
+                            <p class="company">Spark Institute</p>
+                            <p>I learn frontend development, start with mastering HTML for structure, CSS for styling, and JavaScript for interactivity.
+                                 Dive into responsive design with frameworks like Bootstrap and learn version control using Git. 
+                                Practice building small projects to strengthen your skills and explore popular tools like angular for advanced web development.</p>
+                        </div>
+
+                        <div class="resume-item">
+                            <p class="year">2021-2024</p>
+                            <h3>BCA</h3>
+                            <p class="company">Deogiri College Aurangabad</p>
+                            <p> I successfully completed my Bachelor of Computer Applications (BCA) graduation in 2024. 
+                                This accomplishment has equipped me with a strong foundation in technology, 
+                                and I’m excited to apply my skills in the tech industry moving forward..</p>
+                        </div>
+
+                        <div class="resume-item">
+                            <p class="year">2019-2021</p>
+                            <h3>Higher Secondary School</h3>
+                            <p class="company">Shree Balaji Vidyalay, Isad</p>
+                            <p>I successfully completed my 12th in the year 2021,
+                                 which laid the foundation for my higher education and career path in the field of computer applications." </p>
+                        </div>
+
+                        <div class="resume-item">
+                            <p class="year">2018-2019</p>
+                            <h3>Secondary School</h3>
+                            <p class="company">Mamta Madhyamic Vidyalay, Gangakhed</p>
+                            <p>I successfully completed my 10th in 2019, a significant milestone in my academic journey.
+                                 This year laid the foundation for my future studies and career path.</p>
+                        </div>
+                    </div>
+                </div>
+
+    
+                <div class="resume-detail Skills">
+                    <h2 class="heading">My <span>Skills</span></h2>
+                    <p class="desc">my skills</p>
+                    <div class="resume-list">
+                        <div class="resume-item">
+                            <i class='bx bxl-html5'></i>
+                            <span>HTML</span>
+                       </div>
+
+                       <div class="resume-item">
+                        <i class='bx bxl-css3' ></i>
+                            <span>CSS</span>
+                        </div>
+
+                        <div class="resume-item">
+                            <i class='bx bxl-javascript' ></i>
+                           <span>Javascript</span>
+                        </div>
+
+                        <div class="resume-item">
+                            <i class='bx bxl-react' ></i>
+                           <span>React</span>
+                        </div>
+
+                        <div class="resume-item">
+                            <i class='bx bxl-bootstrap'></i>
+                           <span>Tailwind css</span>
+                        </div>
+
+                        <div class="resume-item">
+                            <i class='bx bxl-github' ></i>
+                            <span>GitHub</span>
+                       </div>
+                    </div>
+                </div>
+    
+                <div class="resume-detail About">
+                    <h2 class="heading">About <span>Me</span></h2>
+                    <p class="desc">about me</p>
+                    <div class="resume-list">
+                        <div class="resume-item">
+                            <p>Name : <span> Bhakti Purnale</span></p>
+                       </div>
+
+                       <div class="resume-item">
+                           <p>Gender : <span> Female</span></p>
+                       </div>
+
+                      <div class="resume-item">
+                           <p>Age : <span> 21 Years Old</span></p>
+                      </div>
+
+                      <div class="resume-item">
+                           <p>City :<span> Pune</span></p>
+                      </div>
+
+                      <div class="resume-item">
+                          <p>Nationality :<span> India</span></p>
+                      </div>
+
+                      <div class="resume-item">
+                        <p>Experience :<span> Fresher</span></p>
+                    </div>
+
+                    <div class="resume-item">
+                        <p>Full Time :<span> Available</span></p>
+                    </div>
+
+                    <div class="resume-item">
+                        <p>Phone :<span> (+91) 8010715215</span></p>
+                    </div>
+
+                    <div class="resume-item">
+                        <p>Email :<span> bhakti.purnale.dev@gmail.com</span></p>
+                    </div>
+
+                    <div class="resume-item">
+                        <p>Language :<span> English, Hindi, Marathi</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+       </div>
+    </section>
+
+    <!--portfolio section-->
+    <section id="portfolio" class="portfolio">
+        <h2 class="heading">Latest <span>Project</span></h2>
+          <div class="portfolio-container">
+            <div class="portfolio-box">
+                <div class="portfolio-detail active">
+                    <p class="numb">01</p>
+                    <h3>React Project</h3>
+                    <p>Gemini, built using React, Tailwind CSS, and APIs! 💡
+                    This smart application takes user input and responds with relevant answers,
+                     delivering an interactive and dynamic experience. Whether you're asking questions 
+                     or exploring ideas, Gemini is designed to give accurate and meaningful responses in real time! 🔍💬</p>
+                    <div class="tech">
+                        <p> React, Tailwind css, External API </p>
+                    </div>
+                    <div class="live-github">
+                        <a href="#"><i class='bx bx-arrow-back'></i><span>Live Project</span></a>
+                        <a href="https://github.com/developer-bhakti/Gemeni-Clone"><i class='bx bxl-github'></i><span>Github Repository</span></a>
+                    </div>
+                </div>
+
+                <div class="portfolio-detail">
+                    <p class="numb">02</p>
+                    <h3>Hospital Management</h3>
+                    <p>This hospital website is built using HTML, CSS, and JavaScript, offering a clean and responsive design for a seamless user experience.
+                         🏥✨ It includes features like appointment booking, doctor profiles, service details, and contact information. 📅💉
+                          The interactive UI ensures easy navigation, while JavaScript enhances dynamic elements for better functionality. 🚀
+                         With a professional layout and smooth animations, this project helps patients access healthcare services effortlessly.</p>
+                    <div class="tech">
+                        <p>HTML, CSS, Javascript </p>
+                    </div>
+                    <div class="live-github">
+                        <a href="https://developer-bhakti.github.io/hospital-management/"><i class='bx bx-arrow-back'></i><span>Live Project</span></a>
+                        <a href="https://github.com/developer-bhakti/hospital-management"><i class='bx bxl-github'></i><span>Github Repository</span></a>
+                    </div>
+                </div>
+
+                <div class="portfolio-detail">
+                    <p class="numb">03</p>
+                    <h3>Coffee Shop</h3>
+                    <p>This Starbucks-inspired website is built using HTML, CSS, and JavaScript, featuring a sleek and modern design. 
+                        ☕✨ With dynamic animations, smooth interactions, and a responsive layout, it provides an immersive coffee shopping experience.
+                         The dark-themed UI enhances the visual appeal, while interactive elements make navigation seamless.
+                     🚀 Users can explore menu items, learn about coffee, and engage with the brand effortlessly. Let me know your thoughts and suggestions! </p>
+                    <div class="tech">
+                        <p>HTML, CSS, Javascript</p>
+                    </div>
+                    <div class="live-github">
+                        <a href="https://developer-bhakti.github.io/coffee-animation/"><i class='bx bx-arrow-back'></i><span>Live Project</span></a>
+                        <a href="https://github.com/developer-bhakti/coffee-animation"><i class='bx bxl-github'></i><span>Github Repository</span></a>
+                    </div>
+                </div>
+
+                <div class="portfolio-detail">
+                    <p class="numb">04</p>
+                    <h3>Pune Highlights</h3>
+                    <p>"Pune Best Location Search" is a web application designed to help users discover the best places in Pune with ease.
+                         🏙️📍 Whether you're looking for top food spots, historic temples, vibrant shopping markets, or iconic landmarks, 
+                         this tool provides detailed locations along with map navigation. 🗺️✨ Built using HTML, CSS, and JavaScript,
+                          it ensures a seamless experience for both locals and visitors. 🚀
+                         Explore Pune effortlessly and never miss out on its hidden gems! 🌟</p>
+                    <div class="tech">
+                        <p>HTML, CSS, Javascript</p>
+                    </div>
+                    <div class="live-github">
+                        <a href="https://developer-bhakti.github.io/pune-highlights/"><i class='bx bx-arrow-back'></i><span>Live Project</span></a>
+                        <a href="https://github.com/developer-bhakti/pune-highlights"><i class='bx bxl-github'></i><span>Github Repository</span></a>
+                    </div>
+                </div>
+                
+
+                <div class="portfolio-detail">
+                    <p class="numb">05</p>
+                    <h3>Starbucks</h3>
+                    <p>Presenting my Starbucks website! ☕✨ Built with HTML for structure, CSS for stylish design, and JavaScript for dynamic animations and responsiveness. 🚀
+                         This project brings the Starbucks experience to life with smooth interactions and a modern look. Check it out and share your feedback! 💚</p>
+                    <div class="tech">
+                        <p>HTML, CSS, Javascript</p>
+                    </div>
+                    <div class="live-github">
+                        <a href="https://developer-bhakti.github.io/starbucks/"><i class='bx bx-arrow-back'></i><span>Live Project</span></a>
+                        <a href="https://github.com/developer-bhakti/starbucks"><i class='bx bxl-github'></i><span>Github Repository</span></a>
+                    </div>
+                </div>
+                
+                <div class="portfolio-detail">
+                    <p class="numb">06</p>
+                    <h3>Food Recipie</h3>
+                    <p>
+                        Built using React, Tailwind CSS, and a public API,
+                         this web application allows users to effortlessly search for food recipes. 
+                         With a responsive design and a user-friendly interface,
+                          the app delivers relevant recipes based on user input through a 
+                          dynamic search feature. Whether you're a casual cook or a kitchen enthusiast,
+                           this project makes discovering new dishes simple and fun.
+                       
+                      </p>
+                    <div class="tech">
+                        <p>React, Tailwind css , External API</p>
+                    </div>
+                    <div class="live-github">
+                        <a href="#"><i class='bx bx-arrow-back'></i><span>Live Project</span></a>
+                        <a href="https://github.com/developer-bhakti/react-food-recipe"><i class='bx bxl-github'></i><span>Github Repository</span></a>
+                    </div>
+                </div>
+            </div>
+              
+            <div class="portfolio-box">
+            <div class="portfolio-carousel">
+                <div class="img-slide">
+                    <div class="img-item">
+                        <img src="./images/gemini.png" alt="employee managment 1">
+                    </div>
+
+                    <div class="img-item">
+                        <img src="./images/doctor.jpg" alt="doctors 2">
+                    </div>
+
+                    <div class="img-item">
+                        <img src="./images/coffee.png" alt="coffee 3">
+                    </div>
+
+                    <div class="img-item">
+                        <img src="./images/pune.png" alt="pune 4">
+                    </div>
+
+                    <div class="img-item">
+                        <img src="./images/starbucks.png" alt="starbucks 5">
+                    </div>
+
+                    <div class="img-item">
+                        <img src="./images/food.png" alt="weather 6">
+                    </div>
+                </div>
+            </div>
+
+            <div class="navigation">
+                <button class="arrow-left disabled"><i class='bx bx-chevron-left'></i></button>
+                <button class="arrow-right"><i class='bx bx-chevron-right'></i></button>
+            </div>
+            </div>
+          </div>
+    </section>
+
+    <!--contact section-->
+    <section id="contact" class="contact">
+        <div class="contact-container">
+            <div class="contact-box">
+                <h2>Let's work together....</h2>
+                <p class="desc"></p>
+                <div class="contact-detail">
+                    <i class='bx bxs-phone'></i>
+                    <div class="detail">
+                        <p>Phone</p>
+                        <p>(+91) 8010715215</p>
+                    </div>
+                </div>
+
+                <div class="contact-detail">
+                    <i class='bx bxs-envelope'></i>
+                    <div class="detail">
+                        <p>Email</p>
+                        <p>bhakti.purnale.dev@gmail.com</p>
+                    </div>
+                </div>
+
+                <div class="contact-detail">
+                    <i class='bx bxs-map'></i>
+                    <div class="detail">
+                        <p>Address</p>
+                        <p>kotrude , Pune</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-box">
+                <form action="https://formsubmit.co/fc7d7aaa94b0b96b43e32a1d5e4adec3" method="POST">
+                    <h2 class="heading">Contact <span>Me!</span></h2>
+                    <div class="field-box">
+                        <input type="text" name="fullName" placeholder="Full Name" required>
+                        <input type="email" name="email" placeholder="Email Address" required>
+                        <input type="text" name="phoneNo" placeholder="Phone Number" required>
+                        <input type="text" name="emailSubject" placeholder="Email Subject" required>
+                        <textarea name="message" id="" placeholder="Your Message"></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <script src="script.js"></script>
+</body>
+</html>
